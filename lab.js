@@ -5,7 +5,12 @@
 */
 
 //Code here
+const me = {
+    name: 'Jake',
+    age: 26
+}
 
+console.log(me)
 
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
@@ -17,20 +22,26 @@
 
 //Code here
 
+const dog = {
+    name: 'Jack' ,
+    color: "Cooper" ,
+    age: 9,
+    goodBoy: true
+}
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
 //Code here
-
+console.log(dog.name)
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
-
+console.log(dog['color'])
 
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
@@ -40,14 +51,23 @@
 */
 
 //Code here
-
+const favoriteThings = {
+    band: 'Dance Gavin Dnace',
+    food: 'Spaghetti',
+    person: 'Wife',
+    book: 'The power of the subconscious mind',
+    movie: 'Interstallar',
+    holiday: 'Halloween'
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
 //Code here
-
+favoriteThings.car = 'Audi a4'
+favoriteThings['show'] = 'Schits Creek'
+console.log(favoriteThings)
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
@@ -55,7 +75,9 @@
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings['book'] = 'Harry Potter'
+console.log(favoriteThings)
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -73,7 +95,8 @@ var carDetails = {
 */
 
 //Code Here
-
+let {color, make, model, year} = carDetails
+console.log(`My car color is ${color}. It is a ${year}, ${make} ${model}`)
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
