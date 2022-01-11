@@ -109,13 +109,19 @@ console.log(`My car color is ${color}. It is a ${year}, ${make} ${model}`)
 
 function greeting( obj ) {
   //Code Here
-  
+  const object = {
+      title: 'Mr.',
+      firstName: 'Jacob',
+      lastName: 'Wamsley'
+  }
+  let {title, firstName, lastName} = object
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
 
-
+console.log(greeting())
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
