@@ -134,7 +134,19 @@ console.log(greeting())
 */
 
 //Code Here
+function totalPopulation(num){
+    const newObj ={
+        utah: 5,
+        california: 5,
+        texas: 5,
+        arizona: 5
+    }
 
+    let popSum = {utah, california, texas, arizona} = newObj
+    return utah + california + texas + arizona
+}
+
+console.log(totalPopulation())
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
