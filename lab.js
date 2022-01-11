@@ -135,18 +135,11 @@ console.log(greeting())
 
 //Code Here
 function totalPopulation(num){
-    const newObj ={
-        utah: 5,
-        california: 5,
-        texas: 5,
-        arizona: 5
-    }
-
-    let {utah, california, texas, arizona} = newObj
+    let {utah, california, texas, arizona} = num
     return utah + california + texas + arizona
 }
 
-console.log(totalPopulation())
+// console.log(totalPopulation())
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
@@ -162,18 +155,12 @@ console.log(totalPopulation())
 //Code Here
 function ingredients(same) {
     const newArr = []
-    const foodProperties ={
-        carb: 'Simple Carb',
-        fat: 'Lots of it',
-        protein: 'Highest amount'
-    }
-
-    let {carb, fat, protein} = foodProperties
+    let {carb, fat, protein} = same
     newArr.push(foodProperties)
     return newArr
 }
 
-console.log(ingredients())
+// console.log(ingredients())
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
@@ -215,8 +202,16 @@ console.log(user)
 */
 
 //Code here
+class Cat {
+    constructor(name, age, color){
+        this.name = name;
+        this.age = age;
+        this.color =color;
+    }
+}
 
-
+const newCat = new Cat("Sam", 25, 'orange')
+console.log(newCat)
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
