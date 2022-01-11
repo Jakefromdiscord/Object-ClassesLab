@@ -222,6 +222,19 @@ console.log(newCat)
 */
 
 //Code here
+class Wizard {
+    constructor(fname, age, favoriteSpell){
+        this.fname = fname;
+        this.age = age;
+        this.favoriteSpell = favoriteSpell;
+    }
+    castSpell(){
+        console.log(`${this.fname} has cast ${this.favoriteSpell}`)
+    }
+}
+
+const harry = new Wizard('harry', 25, 'alakazam')
+harry.castSpell()
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
