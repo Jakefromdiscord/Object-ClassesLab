@@ -142,7 +142,7 @@ function totalPopulation(num){
         arizona: 5
     }
 
-    let popSum = {utah, california, texas, arizona} = newObj
+    let {utah, california, texas, arizona} = newObj
     return utah + california + texas + arizona
 }
 
@@ -160,8 +160,20 @@ console.log(totalPopulation())
 */
 
 //Code Here
+function ingredients(same) {
+    const newArr = []
+    const foodProperties ={
+        carb: 'Simple Carb',
+        fat: 'Lots of it',
+        protein: 'Highest amount'
+    }
 
+    let {carb, fat, protein} = foodProperties
+    newArr.push(foodProperties)
+    return newArr
+}
 
+console.log(ingredients())
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
@@ -182,7 +194,9 @@ var user = {
 */
 
 //Code Here
-
+user.name = 'Bryan G. Smith'
+user['email'] = 'bryan.smith@devmounta.in'
+console.log(user)
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
