@@ -379,14 +379,25 @@ console.log(helensInfo)
 */
 
 //Code Here 
+class Vehicle {
+    constructor(capacity, color, mileage){
+        this.capacity = capacity;
+        this.color = color;
+        this.mileage = mileage;
+    }
 
+    move(miles){
+        this.mileage += miles
+        console.log(this.mileage)
+    }
+}
 
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
 */
 
 //Code Here
-
+const myFirstVehicle = new Vehicle(5, 'Black', 2000)
 
 /* 
   Now we'll create a class that's based off of the vehicle class. 
@@ -397,16 +408,28 @@ console.log(helensInfo)
 */
 
 //Code Here
+class Motorcycle extends Vehicle {
+    constructor(capicity, color, mileage, make, isCool){
+        super(capicity,color, mileage)
+        this.make = make;
+        this.isCool = isCool
+    }
+
+}
 
 /*
   Create a Motorcycle using your new class and save it to a variable called myFirstMotorcycle
 */
 
 //Code Here 
+const myFirstMotorcycle = new Motorcycle(2, 'black', 1000, 'Harley Davidson', true)
 
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
 */
+
+myFirstMotorcycle.move(100)
+console.log(myFirstMotorcycle)
 
 /*
   Let's make another class based off of Vehicle. 
@@ -425,7 +448,26 @@ console.log(helensInfo)
 */
 
 //Code Here
+class Boat extends Vehicle {
+    constructor(capicity, color, mileage, name, type, isSeaworthy){
+        super(capicity, color, mileage)
+        this.name = name;
+        this.type = type;
+        this.isSeaworthy = isSeaworthy
+    }
 
+    checkSeaworthiness(){
+        if(this.isSeaworthy){
+        console.log(`The ${this.color} ${this.type} ${this.name} is seaworthy`)
+        } else {
+            console.log(`You need to get your ${this.type} is shape!`)
+        }
+    }
+
+    performMaintenance(){
+        this.isSeaworthy = false
+    }
+}
 
 /*
   Create a new boat using your class. You can choose whatever values you like for all the 
@@ -433,6 +475,8 @@ console.log(helensInfo)
 */
 
 //Code Here
+const myFirstBoat = new Boat(5, 'red', 200, 'betsy', 'ski', false)
+console.log(myFirstBoat)
 
 /*
   Call the checkSeaworthiness method on your new boat
@@ -440,14 +484,19 @@ console.log(helensInfo)
 
 //Code Here
 
+myFirstBoat.checkSeaworthiness()
+
 /*
   Now run the performMaintenance method on your boat
 */
 
 //Code Here 
 
+myFirstBoat.performMaintenance()
+
 /*
   Check the seaworthiness once more (you should be ready for the water!)
 */
 
 //Code Here
+myFirstBoat.checkSeaworthiness()
